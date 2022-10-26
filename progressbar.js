@@ -34,7 +34,7 @@ function generateBar(color, lenght, interval, number, client) {
     }    
     
 
-    let nIcons = Math.floor(lenght/interval)        // Number of icons it will display
+    let nIcons = Math.round(lenght/interval)        // Number of icons it will display
     let bar = ""
     let filledIcons = Math.round(number/interval)   // Number of filled icons
     let emptyIcons = nIcons - filledIcons           // Number of empty icons
